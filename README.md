@@ -1,6 +1,6 @@
 # Harnessing Geometric Frustration Code
 
-**Supporting Information to: "Harnessing Geometric Frustration to Form Band Gaps in Acoustic Networks"**
+## Supporting Information to: "Harnessing Geometric Frustration to Form Band Gaps in Acoustic Networks"**
 
 *By: Pai Wang, Yue Zheng, Matheus C. Fernandes, Yushen Sun, Kai Xu, Sijie Sun, Sung Hoon Kang, Vincent Tournat, Katia Bertoldi.*
 
@@ -16,4 +16,5 @@ conditions. For the numerical deptiction of this code, please refer to the
 supplemental section of the article.
 
 Corresponding code author: m@fer.me
-%}
+
+### If there are any suggestions on corrections or added features please create a pull request.
