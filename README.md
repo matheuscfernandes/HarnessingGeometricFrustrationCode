@@ -18,3 +18,5 @@ supplemental section of the article.
 Corresponding code author: m@fer.me
 
 ### If there are any suggestions on corrections or added features please create a pull request.
+
+Matlab version tested: 2016b
