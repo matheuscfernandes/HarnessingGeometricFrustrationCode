@@ -1,10 +1,10 @@
 function RunAnalysis()
-%{ 
+%{
 Supporting Information to: "Harnessing Geometric Frustration to Form Band
 Gaps in Acoustic Networks"
 
-By: Pai Wang, Yue Zheng, Matheus C. Fernandes, 
-Yushen Sun, Kai Xu, Sijie Sun, Sung Hoon Kang, 
+By: Pai Wang, Yue Zheng, Matheus C. Fernandes,
+Yushen Sun, Kai Xu, Sijie Sun, Sung Hoon Kang,
 Vincent Tournat, Katia Bertoldi.
 
 doi:10.1103/PhysRevLett.118.084302
@@ -118,15 +118,15 @@ NodeCoor=sortrows(NodeCoor);
 
 numelements=size(ElemConnectivity);
 numelements=numelements(1);
-    
-    for i=1:numelements
-        elementcoor(i,1)=ElemConnectivity(i,1);
-        elementcoor(i,2)=NodeCoor(ElemConnectivity(i,2),2);
-        elementcoor(i,3)=NodeCoor(ElemConnectivity(i,2),3);
-        elementcoor(i,4)=NodeCoor(ElemConnectivity(i,3),2);
-        elementcoor(i,5)=NodeCoor(ElemConnectivity(i,3),3);
-    end
-    
+
+for i=1:numelements
+    elementcoor(i,1)=ElemConnectivity(i,1);
+    elementcoor(i,2)=NodeCoor(ElemConnectivity(i,2),2);
+    elementcoor(i,3)=NodeCoor(ElemConnectivity(i,2),3);
+    elementcoor(i,4)=NodeCoor(ElemConnectivity(i,3),2);
+    elementcoor(i,5)=NodeCoor(ElemConnectivity(i,3),3);
+end
+
 end
 
 function [w]= Program(KVect,mode,KGlobal,MGlobal,NodeCoor,SymNodes)
